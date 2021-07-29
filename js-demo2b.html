@@ -19,41 +19,40 @@
         //Add tr in the thead
         $('thead').append('<tr id="showheading"></tr>');
 
-        //Add th in the tr
-        $('#showheading'),append('<th></th>');
-        $('#showheading'),append('<th></th>');
-        $('#showheading'),append('<th></th>');
-        $('#showheading'),append('<th></th>');
-        $('#showheading'),append('<th></th>');
+            //Add th in the tr
+            $('#showheading').append('<th></th>');
+            $('#showheading').append('<th></th>');
+            $('#showheading').append('<th></th>');
+            $('#showheading').append('<th></th>');
+            $('#showheading').append('<th></th>');
 
         //Add tbody in the table
         $('table').append('<tbody></tbody>');
 
         //Add tr in the tbody
         $('tbody').append('<tr id="showcalories"></tr>');
-    
-        //Add td in the tr
-        $('#showcalories').append('<td></td>');
-        $('#showcalories').append('<td></td>');  
-        $('#showcalories').append('<td></td>');
-        $('#showcalories').append('<td></td>');
-        $('#showcalories').append('<td></td>');
-        
         $('tbody').append('<tr id="showfat"></tr>');
-        $('#showfat').append('<td></td>');
-        $('#showfat').append('<td></td>');
-        $('#showfat').append('<td></td>');
-        $('#showfat').append('<td></td>');
-        $('#showfat').append('<td></td>');
+            //Add td in the tr
+            $('#showcalories').append('<td></td>');
+            $('#showcalories').append('<td></td>');  
+            $('#showcalories').append('<td></td>');
+            $('#showcalories').append('<td></td>');
+            $('#showcalories').append('<td></td>');
+        
+            $('#showfat').append('<td></td>');
+            $('#showfat').append('<td></td>');
+            $('#showfat').append('<td></td>');
+            $('#showfat').append('<td></td>');
+            $('#showfat').append('<td></td>');
 
         //Add tfoot in the table
         $('table').append('<tfoot></tfoot>');
         $('tfoot').append('<tr id="showven"></tr>');
-        $('#showven').append('<td></td>');
-        $('#showven').append('<td></td>');
-        $('#showven').append('<td></td>');
-        $('#showven').append('<td></td>');
-        $('#showven').append('<td></td>');
+            $('#showven').append('<td></td>');
+            $('#showven').append('<td></td>');
+            $('#showven').append('<td></td>');
+            $('#showven').append('<td></td>');
+            $('#showven').append('<td></td>');
 
         //Load data from json file to each td
         $.getJSON('/jq/data.json', function(table){
